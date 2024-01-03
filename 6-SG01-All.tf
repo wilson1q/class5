@@ -62,11 +62,11 @@ resource "aws_security_group" "app1-sg02-LB01" {
   }
 
   egress {
+    description = "allow_outbound_traffic"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
-    description = "outbound rule"
   }
 
   tags = {
