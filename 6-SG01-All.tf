@@ -29,6 +29,7 @@ resource "aws_security_group" "app1-sg01-servers" {
 
 
   egress {
+    description = "Allow_outbound_traffic"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
